@@ -90,7 +90,7 @@ class HighlightView extends StatelessWidget {
     return Container(
       color: theme[_rootKey]?.backgroundColor ?? _defaultBackgroundColor,
       padding: padding,
-      child: RichText(
+      child: SelectableText.rich(
         text: TextSpan(
           style: _textStyle,
           children: _convert(highlight.parse(source, language: language).nodes!),
